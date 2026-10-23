@@ -1,0 +1,65 @@
+{
+  "name": "live-log-viewer",
+  "displayName": "Live Log Viewer",
+  "description": "Open .log (and .log.gz) files with per-level colors, text/regex/level filter and live tail.",
+  "version": "0.8.1",
+  "publisher": "exeltarkus",
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "liveLogViewer.showLogs",
+        "title": "Open File Logs…",
+        "category": "Live Log Viewer"
+      },
+      {
+        "command": "liveLogViewer.showLogsFull",
+        "title": "Show All Log Files",
+        "category": "Live Log Viewer"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "liveLogViewer.editor",
+        "displayName": "Live Log Viewer",
+        "selector": [
+          {
+            "filenamePattern": "*.log"
+          },
+          {
+            "filenamePattern": "*.log.gz"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node --test out/test/*.test.js",
+    "package": "vsce package --skip-license --no-rewrite-relative-links",
+    "install:local": "node scripts/install-local.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
