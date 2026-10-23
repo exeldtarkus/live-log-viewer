@@ -1,6 +1,6 @@
 # Live Log Viewer
 
-🇬🇧 English | 🇮🇩 [Bahasa Indonesia](README.id.md)
+English | [Bahasa Indonesia](README.id.md)
 
 A VS Code extension that opens `.log` and `.log.gz` files in a viewer with per-level colors, text / regex / level filters, live tail and, for JSON logs, a Kibana-like table with field filters.
 

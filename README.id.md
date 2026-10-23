@@ -1,6 +1,6 @@
 # Live Log Viewer
 
-🇬🇧 [English](README.md) | 🇮🇩 Bahasa Indonesia
+[English](README.md) | Bahasa Indonesia
 
 Extension VS Code untuk membuka file `.log` dan `.log.gz` di viewer dengan warna per level, filter teks / regex / level, live tail, dan untuk log JSON, tabel ala Kibana dengan filter per field.
 
