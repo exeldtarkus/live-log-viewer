@@ -6,6 +6,10 @@
   "publisher": "exeltarkus",
   "icon": "images/icon.png",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exeldtarkus/live-log-viewer.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -53,13 +57,15 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "test": "npm run compile && node --test out/test/*.test.js",
-    "package": "vsce package --skip-license --no-rewrite-relative-links",
-    "install:local": "node scripts/install-local.js"
+    "package": "vsce package --skip-license",
+    "install:local": "node scripts/install-local.js",
+    "deploy": "node scripts/deploy.js"
   },
   "devDependencies": {
     "@types/node": "^20.19.43",
     "@types/vscode": "^1.85.0",
     "@vscode/vsce": "^4.0.0",
+    "ovsx": "^1.2.0",
     "typescript": "^5.4.0"
   }
 }
