@@ -139,7 +139,6 @@ npm run watch            # compile setiap ada perubahan
 npm test                 # compile + unit test (node --test)
 npm run package          # build .vsix (vsce)
 npm run install:local    # build + install ke VS Code lokal (tambah -- --force untuk install ulang versi yang sama)
-node scripts/screenshots.js   # buat ulang images/screenshots/*.png (butuh playwright-core + Chromium; jalankan npm run compile dulu)
 ```
 
 ## Lisensi

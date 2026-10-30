@@ -139,7 +139,6 @@ npm run watch            # compile on change
 npm test                 # compile + unit tests (node --test)
 npm run package          # build the .vsix (vsce)
 npm run install:local    # build + install into your local VS Code (add -- --force to reinstall the same version)
-node scripts/screenshots.js   # regenerate images/screenshots/*.png (needs playwright-core + Chromium; run npm run compile first)
 ```
 
 ## License

@@ -2,7 +2,7 @@
   "name": "live-log-viewer",
   "displayName": "Live Log Viewer",
   "description": "Open .log (and .log.gz) files with per-level colors, text/regex/level filter and live tail.",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "publisher": "exeltarkus",
   "icon": "images/icon.png",
   "license": "MIT",
